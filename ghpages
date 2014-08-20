@@ -1,0 +1,25 @@
+LIVE:
+
+git branch -D gh-pages
+git push origin :gh-pages
+git checkout --orphan gh-pages
+git add -A
+git commit -m "gh-pages sync"
+git push origin gh-pages
+git checkout master
+git branch
+
+
+URL: http://kitto1.github.io/withyou
+
+---------------------------------------
+LOCAL:
+
+Navigate to website folder
+run command "ecstatic"
+listen on poer 8000
+
+URL: localhost:8000 or 192.168.1.5:8000
+
+CTRL + C to stop running local
+---------------------------------------
