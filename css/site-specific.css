@@ -14,13 +14,33 @@ p{
 
 h2{
 
-	font-size: 40px;
+	font-size: 30px;
 }
+
+
 
 .space{
 
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.icon{
+
+	padding-bottom: 18px;
+}
+
+
+address>a{
+
+	font-size: 20px;
+}
+
+.contactinfo{
+
+	font-size: 20px;
+	padding-top: 20px;
+
 }
 
 
@@ -114,7 +134,7 @@ background-size: cover;
 
 .page-section#contact {
 
-	background-color: #e3f5f7; 
+	 
 	
 }
 
