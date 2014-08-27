@@ -15,11 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/site-specific.css" rel="stylesheet">
-    
-    
-
-
-
+  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -30,20 +26,104 @@
   <body>
 
 
+  <div class="header">
     <div class="container">
+        <nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+          <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand scroll-top brand">Have Stick Will Travel</a>
+            </div>
+            <!--/.navbar-header-->
+      <div id="main-nav" class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+                    <li><a href="#" class="scroll-link nav" data-id="home">Home</a></li>
+                    <li><a href="#" class="scroll-link nav" data-id="about">About Us</a></li>
+                    <li><a href="#" class="scroll-link nav" data-id="contact">Contact</a></li>
+          </ul>
+      </div>
+      <!--/#main-nav.navbar-collapse-->
+  </nav>
+        <!--/.navbar-->
+    </div>
+    <!--/.container-->
+</div>
+<!--/.header-->
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs »</a>
-        </p>
+<div id="home" class="page-section">
+    <div id="headerwrap">
+          <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+              <img src="img/HSWTlogo3.png" style="width: 600px; height: 237px; ">
+            </div>
+          </div><!-- --/row ---->
+          </div> <!-- /container -->
+      </div>
+</div>
+
+
+         <!-- <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                </div>
+            </div>-->
+
+
+
+<div id="about" class="page-section space">
+    <div class="container">
+      <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About Us</h2>
+                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Daniel, who lost his sight at the age of 21 following a tragic criminal assault in 1996, spent a number of years coming to terms with his blindness, discovering a new way of living his life and making the most of the opportunities life has to give.</p>
+                    <p>As a result, Daniel founded Have Stick Will Travel in 2002 and the charity has gone from strength to strength, supporting a number of local blind and partially sighted people enabling them to improve their quality of life through purchasing technology and/or blind friendly appliances, as well as educating businesses, schools and other local groups on 'blind awareness’.</p>
+
+                </div>
+                <div class="col-lg-4">
+                    <p>Help blind and partially sighted people purchase technology and/or appliances that will fundamentally improve their quality of life, through our unique match giving scheme.</p>
+                    <p> Work in partnership with local businesses and large corporate organisations to educate them on blind awareness and the wider needs of visually impaired employees.</p>
+                    <p>Raise public awareness of the Charity and it's support for blind and partially sighted people living in the Bristol area.</p>
+                    <p>Organise and run fundraising for the Charity through events, sponsorships and private donations.</p>
+
+                </div>
+            </div>
+    </div>
+    <!--/.container-->
+</div>
+<!--/#antarctica-->
+ 
+<div id="contact" class="page-section space">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2 class="text-center">Contact Us</h2>
+          <p class="caption">Hello world</p>
+        </div>
       </div>
     </div>
-
-
+    <!--/.container-->
+</div>
+<!--/#asia-->
+ 
 
     
 
@@ -58,9 +138,45 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-    
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+                $(document).ready(function() {
+              // navigation click actions 
+              $('.scroll-link').on('click', function(event){
+                event.preventDefault();
+                var sectionID = $(this).attr("data-id");
+                scrollToID('#' + sectionID, 750);
+              });
+              // scroll to top action
+              $('.scroll-top').on('click', function(event) {
+                event.preventDefault();
+                $('html, body').animate({scrollTop:0}, 'slow');     
+              });
+              // mobile nav toggle
+              $('#nav-toggle').on('click', function (event) {
+                event.preventDefault();
+                $('#main-nav').toggleClass("open");
+              });
+            });
+            // scroll function
+            function scrollToID(id, speed){
+              var offSet = 50;
+              var targetOffset = $(id).offset().top - offSet;
+              var mainNav = $('#main-nav');
+              $('html,body').animate({scrollTop:targetOffset}, speed);
+              if (mainNav.hasClass("open")) {
+                mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+                mainNav.removeClass("open");
+              }
+            }
+            if (typeof console === "undefined") {
+                console = {
+                    log: function() { }
+                };
+          }
+
+    </script>
 
     
 

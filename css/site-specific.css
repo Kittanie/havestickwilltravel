@@ -3,6 +3,129 @@ body {
   
   padding-bottom: 20px;
   padding-top: 20px;
+
   
 }
+
+
+p{
+	font-size: 20px;
+}
+
+h2{
+
+	font-size: 40px;
+}
+
+.space{
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+	text-shadow: 1px 1px 1px #b69a71;
+
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #ffc501;
+	
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #ffc501;
+	
+}
+
+a.brand{
+
+	font-size: 20px;
+}
+
+a.nav{
+
+	font-size: 18px;
+}
+
+#headerwrap {
+background: url(../img/sunflower.jpg) no-repeat center top;
+margin-top: -70px;
+padding-top: 250px;
+text-align: center;
+background-attachment: relative;
+background-position: center center;
+min-height: 650px;
+width: 100%;
+-webkit-background-size: 100%;
+-moz-background-size: 100%;
+-o-background-size: 100%;
+background-size: 100%;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+
+.navbar-default{
+	background-color: transparent;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	background: #222;
+	z-index: 10;
+}
+.header .navbar-brand {
+	font-weight: 900;
+}
+.header .navbar {
+	margin: 0;
+	border: none;
+}
+.page-section {
+	
+			
+}
+
+
+.page-section#home {
+	
+
+	
+}
+
+.page-section#about {
+
+	
+
+
+}
+
+
+.page-section#contact {
+
+	background-color: #e3f5f7; 
+	
+}
+
+
+.container-logo{
+	
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+
 

@@ -1,16 +1,16 @@
 LIVE:
 
-git branch -D gh-pages
-git push origin :gh-pages
+git init
 git checkout --orphan gh-pages
+git branch
 git add -A
 git commit -m "gh-pages sync"
+create new repo on github - git remote
 git push origin gh-pages
-git checkout master
 git branch
 
 
-URL: http://kitto1.github.io/withyou
+URL: http://kitto1.github.io/havestickwilltravel
 
 ---------------------------------------
 LOCAL:
