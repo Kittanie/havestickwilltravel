@@ -1,7 +1,7 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   
-  padding-bottom: 20px;
+  
   padding-top: 20px;
 
   
@@ -17,7 +17,15 @@ h2{
 	font-size: 30px;
 }
 
+.footer{
 
+	background-color: rgba(254,165,1,.5);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 70px;
+	
+
+}
 
 .space{
 
@@ -40,12 +48,20 @@ address>a{
 
 	font-size: 20px;
 	padding-top: 20px;
+	padding-bottom: 20px;
 
 }
 
 
+
+
 .navbar-default .navbar-nav>li>a {
 	color: #fff;
+	background-color: rgba(63,4,8,.6);
+	padding:5px;
+	border-radius: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
 }
 
 .navbar-default .navbar-brand {
